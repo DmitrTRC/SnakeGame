@@ -5,4 +5,7 @@
 #ifndef SNAKEGAME_MAIN_H
 #define SNAKEGAME_MAIN_H
 
+#include <SFML/Graphics.hpp>
+
+
 #endif //SNAKEGAME_MAIN_H
