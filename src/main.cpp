@@ -2,7 +2,7 @@
 // Created by Dmitry Morozov on 05.03.2022.
 //
 
-#include "../include/main.h"
+#include "main.h"
 #include <iostream>
 
 
