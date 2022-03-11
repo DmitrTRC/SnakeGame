@@ -6,6 +6,18 @@
 
 
 int main () {
+    sf::CircleShape shape(50);
+    shape.setFillColor(sf::Color(100, 250, 50));
+    shape.setOutlineColor(sf::Color(100, 150, 250));
+
+
+    sf::CircleShape square(80, 4);
+    square.setFillColor(sf::Color(100, 250, 50));
+
+    
+    sf::CircleShape octagon(80, 8);
+     octagon.setFillColor(sf::Color(100, 250, 50));
+
     sf::RenderWindow window (sf::VideoMode (800, 600), "SFML works!");
     window.setFramerateLimit (60);
 
@@ -23,6 +35,7 @@ int main () {
             }
         }
     }
+
 
     return 0;
 }
