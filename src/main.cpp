@@ -36,10 +36,11 @@ int main () {
             }
         }
         // Render
-        window.clear (sf::Color::Black);
+        window.clear (sf::Color::Green);
         window.draw (shape);
         window.draw (square);
         window.draw (octagon);
+        window.display ();
     }
 
 
