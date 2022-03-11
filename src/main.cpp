@@ -13,6 +13,7 @@ int main () {
 
     sf::CircleShape square(80, 4);
     square.setFillColor(sf::Color(100, 250, 50));
+    square.setPosition(100, 100);
 
     
     sf::CircleShape octagon(80, 8);
@@ -34,6 +35,11 @@ int main () {
                 }
             }
         }
+        // Render
+        window.clear (sf::Color::Black);
+        window.draw (shape);
+        window.draw (square);
+        window.draw (octagon);
     }
 
 
