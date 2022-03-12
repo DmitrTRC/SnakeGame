@@ -6,21 +6,16 @@
 
 
 int main () {
-    sf::CircleShape shape(50);
-    shape.setFillColor(sf::Color(100, 250, 50));
-    shape.setOutlineColor(sf::Color(100, 150, 250));
 
+    sf::RectangleShape square (sf::Vector2f (100, 100));
 
-    sf::CircleShape square(80, 4);
-    square.setFillColor(sf::Color(100, 250, 50));
-    square.setPosition(100, 100);
+    sf::Vector2f squarePosition (800 / 2 - 50, 0);
 
-    
-    sf::CircleShape octagon(80, 8);
-     octagon.setFillColor(sf::Color(100, 250, 50));
+    float y_speed = 3;
 
     sf::RenderWindow window (sf::VideoMode (800, 600), "SFML works!");
     window.setFramerateLimit (60);
+
 
     while (window.isOpen ()) {
         sf::Event event{};
@@ -35,11 +30,20 @@ int main () {
                 }
             }
         }
+        //Physics
+        //TODO: Add physics, On x axis.
+        square.setPosition (squarePosition);
+
+        squarePosition.y += y_speed;
+        if ( squarePosition.y < 0 || squarePosition.y + 100 > 600 ) {
+            y_speed *= -1;
+        }
+
+
+
         // Render
-        window.clear (sf::Color::Green);
-        window.draw (shape);
+        window.clear (sf::Color::Black);
         window.draw (square);
-        window.draw (octagon);
         window.display ();
     }
 
