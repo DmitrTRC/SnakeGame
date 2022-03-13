@@ -35,7 +35,7 @@ int main () {
         square.setPosition (squarePosition);
 
         squarePosition.y += y_speed;
-        if ( squarePosition.y < 0 || squarePosition.y + 100 > 600 ) {
+        if (squarePosition.y < 0 || squarePosition.y + 100 > 600) {
             y_speed *= -1;
         }
 
