@@ -12,8 +12,9 @@ int main () {
     sf::Vector2f squarePosition (800 / 2 - 50, 0);
 
     float y_speed = 3;
+    float x_speed = 3;
 
-    sf::RenderWindow window (sf::VideoMode (800, 600), "SFML works!");
+    sf::RenderWindow window (sf::VideoMode (800, 600), "Pretty Snake");
     window.setFramerateLimit (60);
 
 
@@ -35,8 +36,14 @@ int main () {
         square.setPosition (squarePosition);
 
         squarePosition.y += y_speed;
-        if ( squarePosition.y < 0 || squarePosition.y + 100 > 600 ) {
-            y_speed *= -1;
+        squarePosition.x += x_speed;;
+
+        if (squarePosition.x + 100 > 800 || squarePosition.x < 0) {
+            x_speed = -x_speed;
+        }
+
+        if (squarePosition.y < 0 || squarePosition.y + 100 > 600) {
+            y_speed = -y_speed;
         }
 
 
