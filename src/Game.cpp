@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include "Game.h"
+#include "Game_state.h"
 
 
 Game::Game () {
@@ -19,3 +20,13 @@ Game::~Game () {
 void Game::start () {
     std::cout << "Game started" << std::endl;
 }
+
+void Game::updateFrame () {}
+
+void Game::drawFrame () {}
+
+void Game::processFrame () {}
+
+void Game::run () {}
+
+void Game::initStates () {}
