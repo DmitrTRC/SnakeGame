@@ -2,8 +2,8 @@
 // Created by Dmitry Morozov on 05.03.2022.
 //
 
-#include "main.h"
-#include "Game.h"
+#include "main.hpp"
+#include "Game.hpp"
 
 
 int main () {

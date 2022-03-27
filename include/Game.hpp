@@ -2,11 +2,11 @@
 // Created by Dmitry Morozov on 23/3/22.
 //
 
-#ifndef SNAKEGAME_GAME_H
-#define SNAKEGAME_GAME_H
+#ifndef SNAKEGAME_GAME_HPP
+#define SNAKEGAME_GAME_HPP
 
 #include "SFML/Graphics.hpp"
-#include "State.h"
+#include "State.hpp"
 #include <stack>
 
 
@@ -37,4 +37,4 @@ private:
 };
 
 
-#endif //SNAKEGAME_GAME_H
+#endif //SNAKEGAME_GAME_HPP

@@ -3,8 +3,8 @@
 //
 
 #include <iostream>
-#include "Game.h"
-#include "Game_state.h"
+#include "Game.hpp"
+#include "Game_state.hpp"
 
 
 Game::Game () {
