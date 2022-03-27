@@ -6,6 +6,7 @@
 #define SNAKEGAME_GAME_H
 
 #include "SFML/Graphics.hpp"
+#include "State.h"
 #include <stack>
 
 
@@ -29,7 +30,7 @@ private:
     std::stack<State *> states; //Holds all the States in the Game
 
     //Delta Time == the Speed of Our Computer Specific to every Computer
-    double deltaT;
+    double dt;
     int score; //Saves the Score
 
 
