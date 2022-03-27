@@ -10,29 +10,33 @@
 
 class State {
 public:
+    State (); // Default constructor
+
+    ~State (); // Destructor
+
     virtual bool switchState ();
 
-    virtual void updateView (double dt) = 0;
+    virtual void updateView (double) = 0;
 
     virtual void draw (sf::RenderWindow) = 0;
 
-    virtual void processEvent (double dt, sf::Vector2f mousePos) = 0;
+    virtual void processEvent (double , sf::Vector2f mousePos) = 0;
 
-    virtual void handleInput (double dt) = 0;
+    virtual void handleInput (double ) = 0;
 
-    virtual void onQuit ();
+    virtual void handleQuit ();
 
-    bool getQuitState (bool quit);
+    bool getQuitState (bool ) const;
 
-    void setQuitState (bool quit);
+    void setQuitState (bool );
 
-    void setScoreHolder (int score);
+    void setScoreHolder (int );
 
-    int getScoreHolder ();
+    int getScoreHolder () const;
 
 private:
-    bool quitState;
-    int scoreHolder;
+    bool quitState{};
+    int scoreHolder{};
 };
 
 
