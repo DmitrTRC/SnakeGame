@@ -25,7 +25,7 @@ bool State::getQuitState (bool state) const {
 
 void State::handleQuit () {
     if (sf::Keyboard::isKeyPressed (sf::Keyboard::Escape)) {
-        quitState = true;
+        setQuitState (true);
     }
 }
 
