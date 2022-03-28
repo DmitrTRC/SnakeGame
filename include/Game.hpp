@@ -29,7 +29,7 @@ private:
 
     std::stack<State *> states; //Holds all the States in the Game
 
-    //Delta Time == the Speed of Our Computer Specific to every Computer
+    //dt == the Speed of Our Computer Specific to every Computer
     double dt;
     int score; //Saves the Score
 
